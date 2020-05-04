@@ -396,8 +396,8 @@ private:
         needToRelease=FALSE;
     }
     /* No comparison operators with other MaybeStackArray's. */
-    bool operator==(const MaybeStackArray & /*other*/) {return FALSE;}
-    bool operator!=(const MaybeStackArray & /*other*/) {return TRUE;}
+    bool operator==(const MaybeStackArray & /*other*/) const {return FALSE;}
+    bool operator!=(const MaybeStackArray & /*other*/) const {return TRUE;}
     /* No ownership transfer: No copy constructor, no assignment operator. */
     MaybeStackArray(const MaybeStackArray & /*other*/) {}
     void operator=(const MaybeStackArray & /*other*/) {}
@@ -595,8 +595,8 @@ private:
         }
     }
     /* No comparison operators with other MaybeStackHeaderAndArray's. */
-    bool operator==(const MaybeStackHeaderAndArray & /*other*/) {return FALSE;}
-    bool operator!=(const MaybeStackHeaderAndArray & /*other*/) {return TRUE;}
+    bool operator==(const MaybeStackHeaderAndArray & /*other*/) const {return FALSE;}
+    bool operator!=(const MaybeStackHeaderAndArray & /*other*/) const {return TRUE;}
     /* No ownership transfer: No copy constructor, no assignment operator. */
     MaybeStackHeaderAndArray(const MaybeStackHeaderAndArray & /*other*/) {}
     void operator=(const MaybeStackHeaderAndArray & /*other*/) {}
